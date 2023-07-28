@@ -9,52 +9,146 @@
     <link href="https://github.com/trinitronx" rel="me">
     <link href="https://lyraphase.com/" rel="me">
     <style>
+      /* Based on:
+        https://jakearchibald.com/2013/animated-line-drawing-svg/
+        https://stackoverflow.com/questions/31756893/animation-svg-stroke-not-complete
+      */
+      a#profile {
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
       octicon {
         display: inline-block;
         overflow: visible !important;
         vertical-align: text-bottom;
         fill: currentColor;
       }
-      .octicon-check path {
-        stroke-dasharray: 34.03493118286133 34.03493118286133;
-        transition: 0.2s;
-        animation: drawPath 5s ease-in-out 0s infinite;
+      #check {
+        color: #57ab5a;
+      }
+      #check svg {
+        width: 30px;
+        height: 30px;
+      }
+      #check .octicon-check {
+      /* 	width: 120px; */
+      /* 	height: auto; */
+      /* 	padding: 5px; */
+      /* 	fill: #000; */
+        animation: dashreverse 5s ease;
+        -webkit-transition: all 400ms ease-in-out;
+        -moz-transition: all 400ms ease-in-out;
+        /* -ms-transition: all 400ms ease-in-out; */
+        /* -o-transition: all 400ms ease-in-out; */
+        transition: all 400ms ease-in-out;
+      }
+      #profile:hover .octicon-check {
+        fill: transparent;
+        color: #57ab5a;
+        stroke: #57ab5a;
+        stroke-width: 4px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 446.7171325683594;
+        stroke-dashoffset: 0;
+        transition: .2s;
+        animation: drawPath 5s ease;
       }
       @keyframes drawPath {
         from {
-          stroke-dashoffset: 34.03493118286133;
+          stroke-dasharray: 446.7171325683594;
+          stroke-dashoffset: 0;
+          stroke-width: 0;
         }
         to {
-          stroke-dashoffset: 0; 
+          stroke-dasharray: 0;
+          stroke-dashoffset: 446.7171325683594;
+          stroke-width: 24;
         }
       }
       @keyframes colorRotate {
-        10% {
-          color: rgba(255,255,255,0.0);
+        5% {
+          opacity: 4.36342792645137881445e-1;
         }
         10% {
           color: #6364FF;
+          opacity: 1.90395056089156100291e-1;
+        }
+        15% {
+          opacity: 8.30775206883592607409e-2;
+        }
+        20% {
+          opacity: 3.62502818376377757073e-2;
         }
         25% {
           color: #563ACC;
+          opacity: 1.58175511548733444757e-2;
+        }
+        30% {
+          opacity: 6.90187529182914763885e-3;
+        }
+        35% {
+            opacity: 3.01158390938948827588e-3;
+          }
+        40% {
+          opacity: 1.31408309478307330294e-3;
+        }
+        45% {
+          opacity: 5.7339075780383000993e-4;
         }
         50% {
-          color: #57ab5a;
+          color: rgb(35,196,150);
+          /* color: rgba(255,255,255,0); */
+          opacity: 0;
+        }
+        55% {
+          opacity: 5.7339075780383000993e-4;
+        }
+        60% {
+          opacity: 1.31408309478307330294e-3;
+        }
+        65% {
+          opacity: 3.01158390938948827588e-3;
+        }
+        70% {
+          opacity: 6.90187529182914763885e-3;
         }
         75% {
-          color: rgba(35,196,150,0.5);
+          color: #563ACC;
+          opacity: 1.58175511548733444757e-2;
+        }
+        80% {
+          opacity: 3.62502818376377757073e-2;
+        }
+        85% {
+          opacity: 8.30775206883592607409e-2;
+        }
+        90% {
+          opacity: 1.90395056089156100291e-1;
+        }
+        75% {
+          color: rgb(35,196,150);
+        }
+        90% {
+          color: #6364FF;
         }
         100% {
-          color: rgba(255,255,255,0.0);
+          color: #57ab5a;
+          opacity: 1.0;
         }
       }
       .color-rotate {
         font-size: 2em;
         font-weight: bold;
         font-family: sans-serif;
-        animation: colorRotate 5s linear 0s infinite;
+        animation: colorRotate 5s ease 0s infinite alternate both;
       }
-      .animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+      /* animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, animation-play-state, and animation-timeline. */
+      .animate-pulse { animation: pulse 5s cubic-bezier(0.4, 0, 0.6, 1) 0s infinite alternate both; }
       @keyframes pulse {
         0%, 100% {
           opacity: 1;
@@ -65,19 +159,11 @@
       }
     </style>
   </head>
-  <body style="margin: 0; padding: 0">
-    <a
+  <body style="margin: 0; padding: 0" body onLoad="time_spent()">
+    <a id="profile"
       href="https://github.com/trinitronx"
-      style="
-        display: block;
-        height: 100vh;
-        width: 100vw;
-        margin: 0;
-        padding: 0;
-        color: white;
-      "
     >
-      <svg width="160" height="160" viewBox="0 0 160 160" fill="none" role="img" aria-labelledby="p08bum642omkw69mu2znml5r58lmlxm" class="octicon" version="1.1" id="svg58"
+      <svg class="octicon animate-pulse" width="160" height="160" viewBox="0 0 160 160" fill="none" role="img" aria-labelledby="p08bum642omkw69mu2znml5r58lmlxm" version="1.1" id="svg58"
         sodipodi:docname="mastodon.svg"
         inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
         xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -141,16 +227,15 @@
           </rdf:RDF>
         </metadata>
       </svg>
-      <span class="" style="color: #57ab5a;">
-        <svg aria-label="mastodon profile verification: verified" role="img" height="160" viewBox="0 0 160 160" version="1.1" width="160" data-view-component="true" class="octicon octicon-check">
-          <path fill="currentColor"
-             d="m 156.38723,24.879551 a 9.8438688,9.8438688 0 0 1 0,13.912668 L 61.229829,133.94962 a 9.8438688,9.8438688 0 0 1 -13.912664,0 L 4.6603973,91.292851 A 9.8569941,9.8569941 0 0 1 4.8966504,77.61644 9.8569941,9.8569941 0 0 1 18.573065,77.380165 L 54.273494,113.08059 142.47456,24.879529 a 9.8438688,9.8438688 0 0 1 13.91267,0 z"
-             id="checkpath"
-             style="stroke-width:13.1252" />
-          <!-- <animateTransform from="0 0 0" to="360 0 0" attributeName="transform" type="rotate" repeatCount="indefinite" dur="1300ms" /> -->
+      <span id="check">
+        <svg class="octicon octicon-check" aria-label="mastodon profile verification: verified" role="img" height="160" viewBox="-24 -30 190 160" version="1.1" width="160" data-view-component="true">
+          <path class="octicon-check" fill="currentColor"
+            d="m 156.38723,24.879551 a 9.8438688,9.8438688 0 0 1 0,13.912668 L 61.229829,133.94962 a 9.8438688,9.8438688 0 0 1 -13.912664,0 L 4.6603973,91.292851 A 9.8569941,9.8569941 0 0 1 4.8966504,77.61644 9.8569941,9.8569941 0 0 1 18.573065,77.380165 L 54.273494,113.08059 142.47456,24.879529 a 9.8438688,9.8438688 0 0 1 13.91267,0 z"
+            id="checkpath" />
+        <!-- <animateTransform from="0 0 0" to="360 0 0" attributeName="transform" type="rotate" repeatCount="indefinite" dur="1300ms" /> -->
         </svg>
       </span>
-      <span class="animate-pulse">@trinitronx@mastodon.social</span>
+      <span class="color-rotate">@trinitronx@mastodon.social</span>
     </a>
   </body>
 </html>
