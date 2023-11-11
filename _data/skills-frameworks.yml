@@ -5,24 +5,6 @@
 # - name: Framework
 #   weight: 5
 
-- name: Chef
-  weight: 5
-
-- name: Terraform
-  weight: 5
-
-- name: Ansible
-  weight: 5
-
-- name: Terragrunt
-  weight: 1
-
-- name: Jenkins
-  weight: 4
-
-- name: Node
-  weight: 1
-
 - name: Oh My Zsh
   weight: 4
 
@@ -32,19 +14,10 @@
 - name: React
   weight: 1
 
-- name: Kubernetes
-  weight: 4
-
 - name: Django
   weight: 1
 
-- name: mod_wsgi
-  weight: 2
-
-- name: RVM
-  weight: 5
-
-- name: Sprout
+- name: sprout-wrap
   weight: 5
 
 - name: Rails
@@ -56,24 +29,12 @@
 - name: LAMP
   weight: 5
 
-- name: Varnish
+- name: Node
   weight: 2
 
-- name: Redis
-  weight: 2
-
-- name: ElasticSearch
+- name: ELK
   weight: 4
-
-- name: Logstash
-  weight: 3
-
-- name: Kibana
-  weight: 5
 
 - name: Tomcat
   weight: 3
-
-- name: Kafka
-  weight: 1
 
