@@ -103,8 +103,36 @@ projects:
     forks: true
     # projects: A list of the repository names you want to exclude from the listing.
     projects:
-    # - repo1-to-be-excluded
-    # - repo2-to-be-excluded
+      - trinitronx.github.io
+      - trinitronx-test.github.io
+      - intro-to-rust-kvstore
+      - mlh-ghw-challenges
+      - docker-multi-platform-test
+      - rust-enums
+      - rust-structs-rectangles
+      - rust-structs
+      - rust-understanding-ownership
+      - rust-branches-control-flow
+      - rust-variables-example
+      - vscode-env-debug
+      - rust-import-example-backyard-garden
+      - gospikes
+      - rust-guessing-game
+      - test-markdown-svg
+      - c-variables-and-data-types
+      - vscode-helloworld-multi-arch-build-macos
+      - node-js-hello-world
+      - ansible-pause-bug-reproduction
+      - modern.ie
+      - chef-make-me-a-sammich
+      - chef-fisa-vim-config
+      - strainer-berkshelf-chefspec-recursive-bug
+      - strainer-berkshelf-chefspec-demo-cookbook-repo
+      - rspec-stubmock-test
+      - drupal-xss
+      - tar-test
+      - sinatra-demo
+      - git-demo
 
 # GOOGLE-ANALYTICS
 # Set the id, if you want to track your website with Google Analytics
