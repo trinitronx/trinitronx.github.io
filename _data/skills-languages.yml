@@ -5,38 +5,62 @@
 # - name: Language
 #   weight: 5
 
-- name: TypeScript
+- name: Bash
   weight: 5
 
-- name: JavaScript
-  weight: 4
+- name: POSIX Shell
+  weight: 5
+
+- name: Ruby
+  weight: 5
 
 - name: Python
-  weight: 2
+  weight: 4
 
 - name: HTML5
   weight: 4
 
-- name: CSS3
+- name: CSS
   weight: 3
 
-- name: SASS
+- name: JavaScript
+  weight: 2
+
+- name: PHP
+  weight: 4
+
+- name: Perl
   weight: 3
+
+- name: Rust
+  weight: 3
+
+- name: Go
+  weight: 2
 
 - name: Java
   weight: 1
 
-- name: Dart
-  weight: 1
+- name: SQL
+  weight: 4
 
-- name: Swift
-  weight: 1
+- name: Dockerfile
+  weight: 5
 
-- name: Kotlin
+- name: Makefile
+  weight: 4
+
+- name: C
   weight: 1
 
 - name: C++
-  weight: 2
+  weight: 1
 
-- name: Ruby
-  weight: 2
+- name: M4
+  weight: 1
+
+- name: VHDL
+  weight: 1
+
+- name: HCS12 Assembly
+  weight: 1

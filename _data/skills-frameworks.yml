@@ -5,29 +5,75 @@
 # - name: Framework
 #   weight: 5
 
-- name: Angular
+- name: Chef
   weight: 5
 
-- name: AngularJS
-  weight: 3
+- name: Terraform
+  weight: 5
 
-- name: React
+- name: Ansible
+  weight: 5
+
+- name: Terragrunt
+  weight: 1
+
+- name: Jenkins
   weight: 4
 
 - name: Node
   weight: 1
 
-- name: Flutter
+- name: Oh My Zsh
+  weight: 4
+
+- name: Jekyll
   weight: 2
 
-- name: Express
-  weight: 3
+- name: React
+  weight: 1
+
+- name: Kubernetes
+  weight: 4
 
 - name: Django
   weight: 1
 
-- name: Spring
+- name: mod_wsgi
   weight: 2
 
+- name: RVM
+  weight: 5
+
+- name: Sprout
+  weight: 5
+
 - name: Rails
+  weight: 1
+
+- name: Wordpress
   weight: 4
+
+- name: LAMP
+  weight: 5
+
+- name: Varnish
+  weight: 2
+
+- name: Redis
+  weight: 2
+
+- name: ElasticSearch
+  weight: 4
+
+- name: Logstash
+  weight: 3
+
+- name: Kibana
+  weight: 5
+
+- name: Tomcat
+  weight: 3
+
+- name: Kafka
+  weight: 1
+
