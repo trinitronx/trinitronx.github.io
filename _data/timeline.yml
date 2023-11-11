@@ -17,45 +17,202 @@
 #     - tag: Rails
 #   timeline-side: right
 
-- title: airbnb
-  title-url: https://example.com/
-  date: Sep 2019 - Present
-  subtitle: Fullstack Developer
+- title: Echo360
+  title-url: https://www.proofpoint.com/
+  date: Dec 2020 - Present
+  subtitle: Sr. Site Reliability Engineer
   tags:
-    - tag: React
-    - tag: Javascript
+    - tag: Ansible
+    - tag: Terraform
+    - tag: Kubernetes
+    - tag: Terragrunt
+    - tag: ElasticSearch
+    - tag: Logstash
+    - tag: Kibana
+    - tag: Scala
+    - tag: Play
+    - tag: Kafka
+    - tag: Bash
+  timeline-side: right
+
+- title: Proofpoint
+  title-url: https://www.proofpoint.com/
+  date: Jul 2016 - Oct 2020
+  subtitle: DevOps Engineer
+  tags:
+    - tag: AWS
+    - tag: Ansible
+    - tag: Terraform
+    - tag: Kubernetes
+    - tag: ElasticSearch
+    - tag: Logstash
+    - tag: Kibana
+    - tag: Graphite
+    - tag: Grafana
+    - tag: Nagios
+    - tag: Storm
+    - tag: Kafka
+    - tag: Bash
+  timeline-side: right
+
+- title: Return Path
+  title-url: https://www.validity.com/everest/returnpath/
+  date: Jul 2014 - Aug 2016
+  subtitle: DevOps Engineer
+  tags:
+    - tag: AWS
+    - tag: On-Prem
+    - tag: Datacenter
+    - tag: Ansible
+    - tag: Terraform
+    - tag: Kubernetes
+    - tag: Chef
+    - tag: Puppet
+    - tag: ElasticSearch
+    - tag: Logstash
+    - tag: Kibana
+    - tag: Graphite
+    - tag: Grafana
+    - tag: Nagios
     - tag: Ruby
     - tag: Rails
+    - tag: Hadoop
+    - tag: MapR
+    - tag: Storm
+    - tag: Kafka
+    - tag: PHP
+    - tag: LAMP Stack
+    - tag: Bash
   timeline-side: right
 
-- title: Google
-  title-url: https://example.com/
-  date: Mar 2019 - Sep 2019
-  subtitle: Software Engineer as Intern
+- title: Tango Group / Gloo
+  title-url: https://gloo.us/
+  date: Mar 2013 - Jun 2014
+  subtitle: DevOps Engineer
   tags:
-    - tag: Flutter
-    - tag: Dart
-    - tag: Keycloak
+    - tag: AWS
+    - tag: RackSpace
+    - tag: Chef
+    - tag: Puppet
+    - tag: sprout-wrap
+    - tag: Ruby
+    - tag: Rails
+    - tag: Bash
+    - tag: ElasticSearch
+    - tag: Logstash
+    - tag: Kibana
+    - tag: Sidekiq
   timeline-side: right
 
-- title: Super University
-  title-url: https://example.com/
-  date: 2017 - 2019
-  subtitle: M.Sc. Computer Science
-  timeline-side: left
-
-- title: Facebook
-  title-url: https://example.com/
-  date: Sep 2017 - Mar 2019
-  subtitle: Front-End Developer as Intern
+- title: Standing Cloud
+  title-url: http://web.archive.org/web/20130530111530/http://www.standingcloud.com/
+  date: Jan 2011 - Mar 2013
+  subtitle: Jr. Linux Systems Administrator
   tags:
-    - tag: React
-    - tag: Node
+    - tag: AWS
+    - tag: RackSpace
+    - tag: Linode
+    - tag: Azure
+    - tag: GoogleCloud
+    - tag: DigitalOcean
+    - tag: GoGrid
+    - tag: GreenQloud
+    - tag: OpSource
+    - tag: Bash
+    - tag: POSIX Shell
+    - tag: LAMP Stack
+    - tag: Ruby
+    - tag: Drupal
+    - tag: Joomla
+    - tag: WordPress
+    - tag: XWiki
+    - tag: Mediawiki
+    - tag: Magento
+    - tag: PHPbb
+    - tag: SugarCRM
+    - tag: OSCommerce
+    - tag: Moodle
+    - tag: Solr
+    - tag: Asterisk
+    - tag: OpenVBX
+    - tag: HTML
+    - tag: MySQL
+    - tag: Tomcat
+    - tag: JBoss
+    - tag: GlassFish
+    - tag: Apache
+    - tag: Nginx
+    - tag: Varnish
+    - tag: MemCached
+    - tag: ... Over 107 OSS apps ...
+  timeline-side: right
+
+- title: SEAKR Engineering
+  title-url: https://www.seakr.com/
+  date: May 2010 - Sep 2010
+  subtitle: Infrastructure & Automation Design Engineer
+  tags:
+    - tag: PhotoShop
+    - tag: XWiki
+    - tag: Mediawiki
+    - tag: PHP
+    - tag: HTML
+    - tag: MySQL
+    - tag: Apache
+  timeline-side: right
+
+- title: Echostar
+  title-url: https://www.echostar.com/
+  date: May 2009 - Aug 2009
+  subtitle: Web Programming Intern
+  tags:
+    - tag: PHP
+    - tag: JavaScript
+    - tag: HTML
+    - tag: MySQL
+    - tag: Apache
+  timeline-side: right
+
+- title: Colorado School of Mines
+  title-url: https://www.mines.edu/
+  date: Jan 2009 - May 2009
+  subtitle: Web Programmer
+  tags:
+    - tag: PHP
+    - tag: JavaScript
+    - tag: HTML
+    - tag: Subversion
+  timeline-side: right
+
+- title: Xilinx
+  title-url: https://www.xilinx.com/
+  date: May 2008 - Sep 2008
+  subtitle: ChipScope Intern
+  tags:
+    - tag: Tcl
+    - tag: JTAG
+    - tag: GNU Expect
+  timeline-side: right
+
+- title: Colorado School of Mines
+  title-url: https://www.mines.edu/
+  date: May 2007 - Sep 2007
+  subtitle: Web Programmer
+  tags:
+    - tag: Concept Inventory
+    - tag: XML
+    - tag: PHP
     - tag: Javascript
   timeline-side: right
 
-- title: Super University
-  title-url: https://example.com/
-  date: 2014 - 2017
-  subtitle: B.A. Computer Science
+- title: Colorado School of Mines (xfer)
+  title-url: https://www.mines.edu/
+  date: 2005 - 2009
+  subtitle: B.S. Engineering - Electrical Specialty w/Area of Special Interest in Computer Science
+  timeline-side: left
+
+- title: University of Colorado Boulder
+  title-url: https://www.colorado.edu/
+  date: 2004 - 2005
+  subtitle: B.S. Electrical & Computer Engineering
   timeline-side: left
