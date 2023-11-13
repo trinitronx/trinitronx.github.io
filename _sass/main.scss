@@ -313,13 +313,54 @@ a {
     }
   }
 
+  .github:hover {
+    .circle {
+      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+        colorGitHub 1s linear forwards;
+    }
+
+    .social-svg {
+      fill: #1f2328;
+    }
+  }
+
+  .codepen:hover {
+    .circle {
+      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+        colorCodePen 1s linear forwards;
+    }
+    // .social-svg {
+    //   fill: #000; // omitted b/c default is black
+    // }
+  }
+
+  .devto:hover {
+    .circle {
+      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+        colorDevTo 1s linear forwards;
+    }
+    .social-svg {
+      fill: #0a0a0a;
+    }
+  }
+
   .linkedin:hover {
     .circle {
       animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
         colorLinkedin 1s linear forwards;
     }
     .social-svg {
-      fill: #007bb6;
+      fill: #0a66c2;
+    }
+  }
+
+  .mastodon:hover {
+    .circle {
+      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+        colorMastodon 1s linear forwards;
+    }
+    .social-svg {
+      fill: #6364ff;
     }
   }
 
@@ -365,9 +406,33 @@ a {
     }
   }
 
+  @keyframes colorGitHub {
+    to {
+      stroke: #adbac7;
+    }
+  }
+
+  @keyframes colorCodePen {
+    to {
+      stroke: #47cf73;
+    }
+  }
+
+  @keyframes colorDevTo {
+    to {
+      stroke: #0a0a0a;
+    }
+  }
+
   @keyframes colorLinkedin {
     to {
-      stroke: #007bb6;
+      stroke: #0a66c2;
+    }
+  }
+
+  @keyframes colorMastodon {
+    to {
+      stroke: #6364ff;
     }
   }
 
@@ -635,9 +700,29 @@ a {
     }
   }
 
+  .github:hover {
+    .social-svg {
+      fill: #adbac7;
+    }
+  }
+
+  // omit codepen - just black
+
+  .devto:hover {
+    .social-svg {
+      fill: #0a0a0a;
+    }
+  }
+
   .linkedin:hover {
     .social-svg {
-      fill: #007bb6;
+      fill: #0a66c2;
+    }
+  }
+
+  .mastodon:hover {
+    .social-svg {
+      fill: #6364ff;
     }
   }
 
