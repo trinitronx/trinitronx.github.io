@@ -2,3 +2,5 @@ node_modules/
 .jekyll-metadata
 _site/
 .env
+assets/css/*.min.css
+assets/js/*.min.js
