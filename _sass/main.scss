@@ -851,6 +851,7 @@ img.avatar {
     .timeline {
       margin: 0 auto;
       width: 39.25rem;
+      z-index: 1;
     }
 
     .timeline li:after {
