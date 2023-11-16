@@ -75,6 +75,10 @@ function browserSyncReload(done) {
   done();
 }
 
+/**
+ * Check if we are running in a CI environment
+ * @returns {boolean}
+ */
 function isInCI() {
   return process.env.GITHUB_ACTIONS && process.env.GITHUB_ACTIONS.toString() === 'true' ||
     process.env.TRAVIS && process.env.TRAVIS.toString() === 'true' ||
@@ -87,12 +91,21 @@ function isInCI() {
     process.env.CI && process.env.CI.toString() === 'true';
 }
 
+/**
+ * Check if we are running in a production environment
+ * @returns {boolean}
+ */
 function isProduction() {
   return process.env.NODE_ENV && process.env.NODE_ENV.toString() === 'production' ||
     process.env.JEKYLL_ENV && process.env.JEKYLL_ENV.toString() === 'production' ||
     process.env.GATSBY_ACTIVE_ENV && process.env.GATSBY_ACTIVE_ENV.toString() === 'production' ||
     process.env.CONTEXT && process.env.CONTEXT.toString() === 'production';
 }
+
+/**
+ * Get production base URL from JEKYLL_BASE_URL environment variable
+ * @returns {string}
+ */
 function prodBaseURL() {
   return process.env.JEKYLL_BASE_URL ? process.env.JEKYLL_BASE_URL.toString() : '';
 }
