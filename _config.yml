@@ -155,6 +155,7 @@ exclude:
     "node_modules",
     "package.json",
     "LICENSE.neumorphism",
+    "LICENSE",
     "README.md",
     "yarn.lock",
     "package-lock.json",
