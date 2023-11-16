@@ -61,6 +61,17 @@ a {
   }
 }
 
+img.avatar {
+  height: 3rem;
+  width: 3rem;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  border: 0.2rem solid $primary-color;
+  box-shadow: 0.125rem 0.125rem 0.5rem $primary-color-medium;
+}
+
 .highlight-title {
   color: $primary-color;
   text-shadow: 0.25rem 0.25rem 0.25rem $primary-color;
