@@ -647,12 +647,14 @@ img.avatar {
 
 .project .name-link-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .project .name-link-wrapper .links {
   font-size: 1.5rem;
   margin: 1rem 0.5rem;
+  margin-left: auto; // push to right on wrap
 }
 
 .project-desc {
