@@ -87,6 +87,7 @@ function jekyll(done) {
         'jekyll',
         'build',
         '--incremental',
+        '--verbose',
         '--config=_config.yml,_config_dev.yml'
       ],
       {
