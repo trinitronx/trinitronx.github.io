@@ -114,7 +114,7 @@ function jekyll(done) {
         'build',
         '--incremental',
         '--verbose',
-      ].concat(isInCI() && isProduction() ? ['--config=_config.yml', '--baseurl', '"' + prodBaseURL() + '"'] :
+      ].concat(isInCI() && isProduction() ? ['--config=_config.yml', '--baseurl', prodBaseURL()] :
         ['--config=_config.yml,_config_dev.yml']),
       {
         stdio: 'inherit'
