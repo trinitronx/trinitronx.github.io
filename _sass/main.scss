@@ -530,7 +530,7 @@ img.avatar {
       #f3f3f3 0%,
       #d5d5d5 8%,
       #d5d5d5 92%,
-      #f3f3f3 100%
+      rgb(243, 243, 243, 0.0) 100%
     );
     content: " ";
     height: 100%;
@@ -538,7 +538,6 @@ img.avatar {
     margin-left: -0.0675rem;
     position: absolute;
     width: 0.125rem;
-    z-index: -1;
   }
 
   .timeline li {
