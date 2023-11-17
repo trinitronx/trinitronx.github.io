@@ -12,7 +12,10 @@
 {%- if site.seo_tag.page_locale %}
   <meta property="og:locale" content="{{ site.seo_tag.page_locale }}" />
 {%- endif -%}
-{%- if seo_tag.page_title -%}
+{%- if site.seo_tag.page_type %}
+  <meta property="og:type" content="{{ site.seo_tag.page_type }}" />
+{%- endif -%}
+{%- if site.seo_tag.page_title %}
   <meta property="og:title" content="{{ site.seo_tag.page_title }}" />
 {%- endif -%}
 {%- if site.seo_tag.domain %}
