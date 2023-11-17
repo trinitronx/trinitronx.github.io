@@ -5,6 +5,10 @@
 title: TrinitronX
 # description: This will be meta HTML tag content. This can be ignored.
 description: TrinitronX's CV
+# author: This will be displayed as the author in the meta HTML tag.
+author: James Cuzella
+# keywords: This will be displayed as the keywords in the meta HTML tag.
+keywords: James Cuzella, TrinitronX, CV, Resume, DevOps, SRE, Site Reliability Engineer, Software Engineer, Software Developer, DJ, Producer, Musician, Artist, Technologist, Techno, House, Electronic Music, Music, Technology, Art, Creative, Creative Technologist, Creative Technology, Creative Technologist, Creative Technologist, Creative Technology, Creative Technologist, Creative Techno
 # baseurl: The subpath of your site
 # > set this to "", if you renamed the repository to <user>.github.io
 baseurl: ""
