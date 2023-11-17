@@ -1,46 +1,43 @@
-{%- if site.seo_tag.description -%}
+{%- if site.seo_tag.description %}
   <meta name="description" content="{{ site.seo_tag.description }}" />
   <meta property="og:description" content="{{ site.seo_tag.description }}" />
   <meta property="twitter:description" content="{{ site.seo_tag.description }}" />
 {%- endif -%}
-{%- if site.seo_tag.author -%}
+{%- if site.seo_tag.author %}
   <meta name="author" content="{{ site.seo_tag.author }}" />
 {%- endif -%}
-{%- if site.seo_tag.keywords -%}
+{%- if site.seo_tag.keywords %}
   <meta name="keywords" content="{{ site.seo_tag.keywords }}">
 {%- endif -%}
-{%- if site.seo_tag.page_locale -%}
+{%- if site.seo_tag.page_locale %}
   <meta property="og:locale" content="{{ site.seo_tag.page_locale }}" />
 {%- endif -%}
 {%- if seo_tag.page_title -%}
   <meta property="og:title" content="{{ site.seo_tag.page_title }}" />
 {%- endif -%}
-
-{%- if site.seo_tag.domain -%}
+{%- if site.seo_tag.domain %}
   <meta property="twitter:domain" content="{{ site.seo_tag.domain }}">
 {%- endif -%}
-{%- if site.seo_tag.canonical_url -%}
+{%- if site.seo_tag.canonical_url %}
   <link rel="canonical" href="{{ site.seo_tag.canonical_url }}" />
   <meta property="og:url" content="{{ site.seo_tag.canonical_url }}" />
   <meta property="twitter:url" content="{{ site.seo_tag.canonical_url }}">
 {%- endif -%}
-
-{%- if site.seo_tag.site_title -%}
+{%- if site.seo_tag.site_title %}
   <meta property="og:site_name" content="{{ site.seo_tag.site_title }}" />
   <meta name="twitter:title" content="{{ site.seo_tag.site_title }}">
 {%- endif -%}
-
-{%- if site.seo_tag.image -%}
+{%- if site.seo_tag.image %}
   <meta property="og:image" content="{{ site.seo_tag.image.path }}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="{{ site.seo_tag.image.path }}" />
-  {%- if site.seo_tag.image.height -%}
-    <meta property="og:image:height" content="{{ site.seo_tag.image.height }}" />
+  {%- if site.seo_tag.image.height %}
+  <meta property="og:image:height" content="{{ site.seo_tag.image.height }}" />
   {%- endif -%}
-  {%- if site.seo_tag.image.width -%}
-    <meta property="og:image:width" content="{{ site.seo_tag.image.width }}" />
+  {%- if site.seo_tag.image.width %}
+  <meta property="og:image:width" content="{{ site.seo_tag.image.width }}" />
   {%- endif -%}
-  {%- if site.seo_tag.image.alt -%}
-    <meta property="og:image:alt" content="{{ site.seo_tag.image.alt }}" />
-  {%- endif -%}
+  {%- if site.seo_tag.image.alt %}
+  <meta property="og:image:alt" content="{{ site.seo_tag.image.alt }}" />
+  {% endif %}
 {%- endif -%}
