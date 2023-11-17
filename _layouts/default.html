@@ -12,9 +12,7 @@
 
   {% include head-seo-meta.html %}
 
-  <link rel="me" href="https://mastodon.social/{{site.mastodon_username}}">
-  <link href="https://github.com/{{site.github_username}}" rel="me">
-  <link href="{{site.rel_me_url}}" rel="me">
+  {% include head-social-me.html %}
 
   <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/favicon/apple-touch-icon.png" | prepend: site.baseurl }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/favicon/favicon-32x32.png" | prepend: site.baseurl }}">
