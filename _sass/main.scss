@@ -538,6 +538,7 @@ img.avatar {
     margin-left: -0.0675rem;
     position: absolute;
     width: 0.125rem;
+    z-index: 0;
   }
 
   .timeline li {
@@ -580,6 +581,7 @@ img.avatar {
   .flag-wrapper {
     position: relative;
     text-align: center;
+    z-index: 1;
   }
 
   .flag {
@@ -633,6 +635,8 @@ img.avatar {
     margin: 1em 0 0 0;
     padding: 0.75em;
     text-align: center;
+    position: relative;
+    z-index: 1;
   }
 }
 
@@ -851,7 +855,6 @@ img.avatar {
     .timeline {
       margin: 0 auto;
       width: 39.25rem;
-      z-index: 1;
     }
 
     .timeline li:after {
