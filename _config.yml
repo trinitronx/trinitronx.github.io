@@ -3,12 +3,27 @@
 # GENERAL SITE SETTINGS
 # title: This will be displayed as the website's name in your browser tab.
 title: TrinitronX
-# description: This will be meta HTML tag content. This can be ignored.
-description: TrinitronX's CV
-# author: This will be displayed as the author in the meta HTML tag.
-author: James Cuzella
-# keywords: This will be displayed as the keywords in the meta HTML tag.
-keywords: James Cuzella, TrinitronX, CV, Resume, DevOps, SRE, Site Reliability Engineer, Software Engineer, Software Developer, DJ, Producer, Musician, Artist, Technologist, Techno, House, Electronic Music, Music, Technology, Art, Creative, Creative Technologist, Creative Technology, Creative Technologist, Creative Technologist, Creative Technology, Creative Technologist, Creative Techno
+# seo_tags: These will be meta HTML tags content.
+seo_tag:
+  # site_title: This will be displayed as the og:title meta HTML tag.
+  site_title: TrinitronX
+  # page_title: This will be displayed as the og:page_title meta HTML tag.
+  page_title: TrinitronX's Page
+  # description: This will be meta HTML tag content. This can be ignored.
+  description: TrinitronX's CV
+  # author: This will be displayed as the author in the meta HTML tag.
+  author: James Cuzella
+  # page_locale: This will be displayed as the og:locale meta HTML tag.
+  page_locale: en_US
+  # keywords: This will be displayed as the keywords in the meta HTML tag.
+  keywords: James Cuzella, TrinitronX, CV, Resume, DevOps, SRE, Site Reliability Engineer, Software Engineer, Software Developer, DJ, Producer, Musician, Artist, Technologist, Techno, House, Electronic Music, Music, Technology, Art, Creative, Creative Technologist, Creative Technology, Creative Technologist, Creative Technologist, Creative Technology, Creative Technologist, Creative Techno
+  # image: This will be displayed as the og:image* meta HTML tags.
+  image:
+    path: '/assets/img/og-image.png'
+    width: 1200
+    height: 630
+    alt: Preview of TrinitronX's Page
+
 # baseurl: The subpath of your site
 # > set this to "", if you renamed the repository to <user>.github.io
 baseurl: ""
@@ -21,6 +36,8 @@ username: trinitronx
 typing_text: DevOps / Site Reliability Engineer
 # email: Your E-Mail address for the email button.
 email:
+# rel_me_url: Your rel="me" URL for HTML meta tag.
+rel_me_url: https://lyraphase.com/
 # For every social button you want to display, set your username or userid
 # If you do not use one of the following websites, then leave it empty
 # > twitter_username:
