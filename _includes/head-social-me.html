@@ -1,3 +1,9 @@
-<link rel="me" href="https://mastodon.social/{{site.mastodon_username}}">
-<link href="https://github.com/{{site.github_username}}" rel="me">
-<link href="{{site.rel_me_url}}" rel="me">
+{%- if site.mastodon_username %}
+  <link rel="me" href="https://mastodon.social/{{site.mastodon_username}}">
+{%- endif %}
+{%- if site.github_username %}
+  <link href="https://github.com/{{site.github_username}}" rel="me">
+{%- endif %}
+{%- if site.rel_me_url %}
+  <link href="{{site.rel_me_url}}" rel="me">
+{%- endif %}
