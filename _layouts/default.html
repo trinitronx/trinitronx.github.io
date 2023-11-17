@@ -25,17 +25,24 @@
   <meta property="og:title" content="{{ site.seo_tag.page_title }}" />
 {% endif %}
 
+{% if site.seo_tag.domain %}
+  <meta property="twitter:domain" content="{{ site.seo_tag.domain }}">
+{% endif %}
 {% if site.seo_tag.canonical_url %}
   <link rel="canonical" href="{{ site.seo_tag.canonical_url }}" />
   <meta property="og:url" content="{{ site.seo_tag.canonical_url }}" />
+  <meta property="twitter:url" content="{{ site.seo_tag.canonical_url }}">
 {% endif %}
 
 {% if site.seo_tag.site_title %}
   <meta property="og:site_name" content="{{ site.seo_tag.site_title }}" />
+  <meta name="twitter:title" content="{{ site.seo_tag.site_title }}">
 {% endif %}
 
 {% if site.seo_tag.image %}
   <meta property="og:image" content="{{ site.seo_tag.image.path }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="{{ site.seo_tag.image.path }}" />
   {% if site.seo_tag.image.height %}
     <meta property="og:image:height" content="{{ site.seo_tag.image.height }}" />
   {% endif %}
