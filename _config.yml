@@ -13,6 +13,8 @@ seo_tag:
   site_title: TrinitronX
   # page_title: This will be displayed as the og:page_title meta HTML tag.
   page_title: TrinitronX's Page
+  # page_type: This will be displayed as the og:type meta HTML tag.
+  page_type: website
   # description: This will be meta HTML tag content. This can be ignored.
   description: TrinitronX's CV
   # author: This will be displayed as the author in the meta HTML tag.
@@ -50,7 +52,7 @@ codepen_username: trinitronx
 dev_username: trinitronx
 linkedin_username: james-cuzella
 twitter_username: trinitronx
-mastodon_username: '@TrinitronX'
+mastodon_username: '@TrinitronX@mastodon.social'
 
 # ABOUT ME SECTION
 # show_aboutme_card:
