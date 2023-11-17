@@ -5,6 +5,10 @@
 title: TrinitronX
 # seo_tags: These will be meta HTML tags content.
 seo_tag:
+  # domain: This will be displayed as the twitter:domain meta HTML tag.
+  domain: trinitronx.github.io
+  # canonical_url: This will be displayed as the canonical URL & twitter:url meta HTML tags.
+  canonical_url: https://trinitronx.github.io/
   # site_title: This will be displayed as the og:title meta HTML tag.
   site_title: TrinitronX
   # page_title: This will be displayed as the og:page_title meta HTML tag.
