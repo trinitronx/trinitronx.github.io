@@ -1,5 +1,16 @@
 {%- if site.mastodon_username %}
-  <link rel="me" href="https://mastodon.social/{{site.mastodon_username}}" />
+{%-   assign mastodon_username_parts = site.mastodon_username | split: '@' -%}
+{%-   if mastodon_username_parts.size == 3 -%}
+{%-     assign mastodon_username = mastodon_username_parts[1] -%}
+{%-     assign mastodon_site = mastodon_username_parts[2] -%}
+{%-   elsif mastodon_username_parts.size == 2 -%}
+{%-     assign mastodon_site = 'mastodon.social' -%}
+{%-     assign mastodon_username = mastodon_username_parts[1] -%}
+{%-   else -%}
+{%-     assign mastodon_site = 'mastodon.social' -%}
+{%-     assign mastodon_username = mastodon_username_parts[0] -%}
+{%-   endif -%}
+  <link rel="me" href="https://{{ mastodon_site | append: '/' | append: '@' | append: mastodon_username }}" />
 {%- endif %}
 {%- if site.github_username %}
   <link href="https://github.com/{{site.github_username}}" rel="me" />
