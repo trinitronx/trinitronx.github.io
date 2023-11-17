@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' {{ site.username }}.github.io; img-src 'self' {{ site.username }}.github.io github.com *.github.com avatars.githubusercontent.com; style-src 'self' {{ site.username }}.github.io https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' {{ site.username }}.github.io https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' {{ site.username }}.github.io https://www.google-analytics.com 'unsafe-inline'; media-src 'self' {{ site.username }}.github.io youtube.com *.youtube.com; child-src 'none';">
+  {% include head-csp.html %}
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
