@@ -23,6 +23,9 @@
 - name: CSS
   weight: 3
 
+- name: TypeScript
+  weight: 3
+
 - name: JavaScript
   weight: 2
 
