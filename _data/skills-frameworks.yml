@@ -30,7 +30,7 @@
   weight: 5
 
 - name: Node
-  weight: 2
+  weight: 3
 
 - name: ELK
   weight: 4

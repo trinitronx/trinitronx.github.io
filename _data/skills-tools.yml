@@ -26,16 +26,37 @@
 - name: Travis CI
   weight: 5
 
+- name: GitHub Actions
+  weight: 5
+
 - name: Jenkins
   weight: 4
 
+- name: GitLab CI
+  weight: 3
+
+- name: ArgoCD
+  weight: 3
+
+- name: Atlantis
+  weight: 2
+
 - name: Chrome DevTools
   weight: 4
+
+- name: Vim
+  weight: 4
+
+- name: Emacs
+  weight: 3
 
 - name: Redis
   weight: 2
 
 - name: Kubernetes
+  weight: 5
+
+- name: Helm
   weight: 4
 
 - name: ElasticSearch
@@ -62,8 +83,11 @@
 - name: gulp
   weight: 1
 
+- name: webpack
+  weight: 3
+
 - name: VS Code
-  weight: 4
+  weight: 5
 
 - name: cURL
   weight: 5

@@ -17,10 +17,16 @@
 - name: Python
   weight: 4
 
+- name: Jinja
+  weight: 5
+
 - name: HTML5
   weight: 4
 
 - name: CSS
+  weight: 3
+
+- name: TypeScript
   weight: 3
 
 - name: JavaScript
@@ -50,14 +56,17 @@
 - name: Makefile
   weight: 4
 
+- name: Jupyter Notebook
+  weight: 2
+
 - name: C
-  weight: 1
+  weight: 2
 
 - name: C++
   weight: 1
 
 - name: M4
-  weight: 1
+  weight: 2
 
 - name: VHDL
   weight: 1
